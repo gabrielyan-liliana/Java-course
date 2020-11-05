@@ -6,6 +6,7 @@ public class Employee {
     public String lastname;
     public String email;
     public int yearOfBirth;
+    public char gender;
     public int salary;
     private int bonus;
 
@@ -21,5 +22,6 @@ public class Employee {
         System.out.println("Name: " + this.firstname + " " + this.lastname);
         System.out.println("Email: " + this.email);
         System.out.println("Age " + (Calendar.getInstance().get(Calendar.YEAR) - this.yearOfBirth));
+        System.out.println("Gender " + this.gender);
     }
 }

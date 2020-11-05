@@ -10,6 +10,7 @@ public class OOPHomework {
         employee.salary = 200;
         employee.email = "some@email.com";
         employee.yearOfBirth = 1995;
+        employee.gender = 'f';
 
 
         System.out.println(employee.firstname);
