@@ -2,7 +2,7 @@ package lesson3.main;
 
 import lesson3.model.Employee;
 
-public class OOPHomework {
+public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee();
         employee.setFirstname("FName");
