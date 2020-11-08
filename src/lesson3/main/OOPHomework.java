@@ -1,4 +1,4 @@
-package lesson3.service;
+package lesson3.main;
 
 import lesson3.model.Employee;
 
