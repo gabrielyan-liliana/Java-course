@@ -5,20 +5,22 @@ import lesson3.model.Employee;
 public class OOPHomework {
     public static void main(String[] args) {
         Employee employee = new Employee();
-        employee.firstname = "FName";
-        employee.lastname = "LName";
-        employee.salary = 200;
-        employee.email = "some@email.com";
-        employee.yearOfBirth = 1995;
-        employee.gender = 'f';
+        employee.setFirstname("FName");
+        employee.setLastname("LName");
+        employee.setSalary(200);
+        employee.setEmail("some@email.com");
+        employee.setYearOfBirth(1995);
+        employee.setGender('f');
 
 
-        System.out.println(employee.firstname);
+        System.out.println(employee.getFirstname());
 
-        employee.introduceEmpolyee();
         System.out.println(employee.getBonus());
         employee.setBonus(5);
         System.out.println(employee.getBonus());
+
+        System.out.println(employee.getAge());
+
     }
 }
 
