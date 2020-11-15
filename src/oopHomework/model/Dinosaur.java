@@ -5,6 +5,6 @@ public class Dinosaur extends Oviparous {
 
     @Override
     public boolean isExtinct() {
-        return true;
+        return extinct;
     }
 }

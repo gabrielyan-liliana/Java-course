@@ -8,6 +8,7 @@ public class Animal {
     private boolean inRedBook;
     private boolean extinct;
     private boolean fly;
+    private boolean bornLive = true;
 
     public boolean isPredator() {
         return predator;
@@ -65,13 +66,26 @@ public class Animal {
         this.fly = fly;
     }
 
+    public boolean isBornLive() {
+        return bornLive;
+    }
+
+    public void setBornLive(boolean bornLive) {
+        this.bornLive = bornLive;
+    }
+
+    public String toString(){
+        return "Is predator: " + (isPredator() ? "Yes" : "No") + "\n" +
+                "Has wings: " + (hasWings() ? "Yes" : "No") + "\n" +
+                "Can fly: " + (canFly() ? "Yes" : "No") + "\n" +
+                "Has teeth: " + (hasTeeth() ? "Yes" : "No") + "\n" +
+                "Has feet: " + (hasFeet() ? "Yes" : "No") + "\n" +
+                "In red book: " + (isInRedBook() ? "Yes" : "No") + "\n" +
+                "Is extinct: " + (isExtinct() ? "Yes" : "No") + "\n" +
+                (isBornLive() ? "Born live" : "Born in eggs");
+    }
+
     public void printInfo() {
-        System.out.println("Is predator: " + (this.isPredator() ? "Yes" : "No"));
-        System.out.println("Has wings: " + (this.hasWings() ? "Yes" : "No"));
-        System.out.println("Can fly: " + (this.canFly() ? "Yes" : "No"));
-        System.out.println("Has teeth: " + (this.hasTeeth() ? "Yes" : "No"));
-        System.out.println("Has feet: " + (this.hasFeet() ? "Yes" : "No"));
-        System.out.println("In red book: " + (this.isInRedBook() ? "Yes" : "No"));
-        System.out.println("Is extinct: " + (this.isExtinct() ? "Yes" : "No"));
+        System.out.println(this);
     }
 }
